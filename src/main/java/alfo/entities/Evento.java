@@ -9,6 +9,7 @@ import java.util.UUID;
 
 @Entity
 @Table (name ="events")
+@Inheritance(strategy =  InheritanceType.JOINED)
 public class Evento {
     @Id
     @GeneratedValue
@@ -26,6 +27,10 @@ public class Evento {
     private int numeroMassimoPartecipanti;
     @OneToMany(mappedBy = "evento")
     private List<Partecipazione> partecipazioni;
+
+    @OneToOne
+    @JoinColumn(name = "partita_id", nullable = false)
+    private PartitaDiCalcio partitaDiCalcio;
 
 
     public Evento() {

@@ -52,9 +52,9 @@ public class Application {
 //        pd.save(p2);
 //        pd.save(p3);
 
-        ld.save(l1);
-        ld.save(l2);
-        ld.save(l3);
+//        ld.save(l1);
+//        ld.save(l2);
+//        ld.save(l3);
 
 //        try {
 //            Evento eFromDb = ed.getById(UUID.fromString("002dcb97-2d4f-4972-85a8-a3af66d7014e"));
